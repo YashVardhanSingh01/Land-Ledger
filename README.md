@@ -30,11 +30,11 @@ Follow the steps below to set up Land Ledger on your system:
     * Open Postman.
     * Use the different endpoints to access land ownership records and verify the functionality of the system.
 
-# Land Ledger API Example Requests and Responses
+## Land Ledger API Example Requests and Responses
 
-## Example API Request and Response for `/add-user`:
+### Example API Request and Response for `/add-user`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -48,7 +48,7 @@ user_data = {
 response = requests.post(url, json=user_data)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "uid": 123,
@@ -57,9 +57,9 @@ print(response.json())
     "prop_list": [1, 2, 3]
 }
 ```
-## Example API Request and Response for `/add-property`:
+### Example API Request and Response for `/add-property`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -73,7 +73,7 @@ property_data = {
 response = requests.post(url, json=property_data)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "pid": 1,
@@ -81,9 +81,9 @@ print(response.json())
     "owner": "John Doe"
 }
 ```
-## Example API Request and Response for `/add-transaction`:
+### Example API Request and Response for `/add-transaction`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -97,7 +97,7 @@ transaction_data = {
 response = requests.post(url, json=transaction_data)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "buyer": "Alice",
@@ -106,9 +106,9 @@ print(response.json())
     "validation_status": "Valid"
 }
 ```
-## Example API Request and Response for `/add-block`:
+### Example API Request and Response for `/add-block`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -121,15 +121,15 @@ block_data = {
 response = requests.post(url, json=block_data)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "block_hash": "0x1F7E84D6A18B6E90"
 }
 ```
-## Example API Request and Response for `/validate-chain`:
+### Example API Request and Response for `/validate-chain`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -138,22 +138,22 @@ url = 'http://localhost:5000/validate-chain'
 response = requests.get(url)
 print(response.json())
 ```
-### JSON Response:
-##### Response (Valid Chain):
+#### JSON Response:
+###### Response (Valid Chain):
 ```json
 {
     "message": "Blockchain is valid"
 }
 ```
-##### Response (Tampered Chain):
+###### Response (Tampered Chain):
 ```json
 {
     "message": "Blockchain has been tampered with"
 }
 ```
-## Example API Request and Response for `/view-history/<int:number>`:
+### Example API Request and Response for `/view-history/<int:number>`:
 
-### Python Request:
+#### Python Request:
 ```python
 import requests
 
@@ -162,7 +162,7 @@ url = 'http://localhost:5000/view-history/1'
 response = requests.get(url)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "property_id": 1,
@@ -180,7 +180,7 @@ print(response.json())
     ]
 }
 ```
-## Example API Request and Response for `/tamper/<int:number>`:
+### Example API Request and Response for `/tamper/<int:number>`:
 
 ### Python Request:
 ```python
@@ -191,7 +191,7 @@ url = 'http://localhost:5000/tamper/2'
 response = requests.get(url)
 print(response.json())
 ```
-### JSON Response:
+#### JSON Response:
 ```json
 {
     "tampered_blockchain": [
