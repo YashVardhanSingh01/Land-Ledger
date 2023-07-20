@@ -32,7 +32,7 @@ Follow the steps below to set up Land Ledger on your system:
     ```
 3. Use Postman Application to Test Endpoints
     * Install Postman if you haven't already.
-    * Open Postman.
+    * Open Postman and use http://localhost:5000 as the url.
     * Use the different endpoints to access land ownership records and verify the functionality of the system.
 
 ## Land Ledger API Example Requests and Responses
