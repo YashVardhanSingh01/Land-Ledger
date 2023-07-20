@@ -15,9 +15,10 @@ Land Ledger is a revolutionary decentralized land management system that leverag
 Follow the steps below to set up Land Ledger on your system:
 
 1. Clone the Land Ledger repository:
-    `` bash``
-    ``git clone https://github.com/YashVardhanSingh01/Land-Ledger.git``
-    ``cd Land-Ledger``
+    ```
+    git clone https://github.com/YashVardhanSingh01/Land-Ledger.git
+    cd Land-Ledger
+    ```
 2. Install the required dependencies:
     ``pip install -r requirements.txt``
 
