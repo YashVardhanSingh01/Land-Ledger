@@ -20,13 +20,17 @@ Follow the steps below to set up Land Ledger on your system:
     cd Land-Ledger
     ```
 2. Install the required dependencies:
-    ``pip install -r requirements.txt``
+    ```bash
+   pip install -r requirements.txt
+    ```
 
 ## Getting Started
 
 1. Start the Land Ledger blockchain network and the RESTful API by:
-    ``python3 PoS.py``
-2. Use Postman Application to Test Endpoints
+    ```bash
+   python3 PoS.py
+    ```
+3. Use Postman Application to Test Endpoints
     * Install Postman if you haven't already.
     * Open Postman.
     * Use the different endpoints to access land ownership records and verify the functionality of the system.
